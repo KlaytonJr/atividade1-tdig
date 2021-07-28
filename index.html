@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="box">
+        <section class="list" id="section-01">
+            <div class="list-item">
+                <h2>Roteiro 1</h2>
+            </div>
+
+            <div class="list-item py-6">
+                <h5 class="color-gray mr-2">01.</h5>
+                <a href="./Exercicio6/index.html" target="_blank"><h3>Exercício 6</h3></a>
+                
+                <img src="./assets/img/6.png" class="img-project" alt="Math Game">
+            </div>
+
+            <div class="bb-gray"></div>
+
+            <div class="list-item py-6">
+                <h5 class="color-gray mr-2">02.</h5>
+                <a href="./Exercicio7/index.html" target="_blank"><h3>Exercício 7</h3></a>
+                
+                <img src="./assets/img/7.png" class="img-project" alt="Math Game">
+            </div>
+
+            <div class="bb-gray"></div>
+
+            <div class="list-item py-6">
+                <h5 class="color-gray mr-2">03.</h5>
+                <a href="./Exercicio8/index.html" target="_blank"><h3>Exercício 8</h3></a>
+                
+                <img src="./assets/img/8.png" class="img-project" alt="Math Game">
+            </div>
+
+            <div class="bb-gray"></div>
+
+            <div class="list-item py-6">
+                <h5 class="color-gray mr-2">04.</h5>
+                <a href="./Exercicio9/index.html" target="_blank"><h3>Exercício 9</h3></a>
+                
+                <img src="./assets/img/9.png" class="img-project" alt="Math Game">
+            </div>
+
+            <div class="bb-gray"></div>
+
+            <div class="list-item py-6">
+                <h5 class="color-gray mr-2">05.</h5>
+                <a href="./Exercicio10/index.html" target="_blank"><h3>Exercício 10</h3></a>
+                
+                <img src="./assets/img/10.png" class="img-project" alt="Math Game">
+            </div>
+
+        </section>
+        <i class="assign right">Klayton Jr</i>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.from("#section-01 div", {
+                duration: 1,
+                y: 300,
+                opacity: 0,
+                stagger: {each: 0.2},
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#section-01",
+                }
+            });
+        })
+    </script>
+</body>
+</html>
